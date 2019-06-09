@@ -1,0 +1,455 @@
+2018-06-06 07:57:25 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: TokenTransfers)
+2018-06-06 07:57:25 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.5.5 (default, Apr 20 2018, 23:41:22) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-3.10.0-693.21.1.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-06-06 07:57:38 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: TokenTransfers)
+2018-06-06 07:57:38 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.5.5 (default, Apr 20 2018, 23:41:22) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-3.10.0-693.21.1.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-06-06 07:58:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: TokenTransfers)
+2018-06-06 07:58:02 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.5.5 (default, Apr 20 2018, 23:41:22) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-3.10.0-693.21.1.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-06-06 07:58:02 [scrapy.crawler] INFO: Overridden settings: {'DOWNLOAD_DELAY': 10, 'NEWSPIDER_MODULE': 'TokenTransfers.spiders', 'LOG_LEVEL': 'INFO', 'CONCURRENT_REQUESTS_PER_DOMAIN': 1, 'LOG_FILE': 'tokenholder.log', 'BOT_NAME': 'TokenTransfers', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36', 'COOKIES_ENABLED': False, 'SPIDER_MODULES': ['TokenTransfers.spiders']}
+2018-06-06 07:58:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-06-06 07:58:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'TokenTransfers.middlewares.rotate_user_agent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-06 07:58:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-06 07:58:03 [scrapy.middleware] INFO: Enabled item pipelines:
+['TokenTransfers.pipelines.ElasticsearchPipeline']
+2018-06-06 07:58:03 [scrapy.core.engine] INFO: Spider opened
+2018-06-06 07:58:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-06 07:58:07 [scrapy.crawler] INFO: Received SIG_SETMASK, shutting down gracefully. Send again to force 
+2018-06-06 07:58:07 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-06-06 07:58:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:3.512s]
+2018-06-06 07:58:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.073s]
+2018-06-06 07:58:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.178s]
+2018-06-06 07:58:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.130s]
+2018-06-06 07:58:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.068s]
+2018-06-06 07:58:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.073s]
+2018-06-06 07:58:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.175s]
+2018-06-06 07:58:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.150s]
+2018-06-06 07:58:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.090s]
+2018-06-06 07:58:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.075s]
+2018-06-06 07:58:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.114s]
+2018-06-06 07:58:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.090s]
+2018-06-06 07:58:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.078s]
+2018-06-06 07:58:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.058s]
+2018-06-06 07:58:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.086s]
+2018-06-06 07:58:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.080s]
+2018-06-06 07:58:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.074s]
+2018-06-06 07:58:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.119s]
+2018-06-06 07:58:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.085s]
+2018-06-06 07:58:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:58:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.085s]
+2018-06-06 07:58:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.063s]
+2018-06-06 07:58:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.104s]
+2018-06-06 07:58:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.074s]
+2018-06-06 07:58:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.092s]
+2018-06-06 07:58:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.061s]
+2018-06-06 07:58:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.092s]
+2018-06-06 07:58:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.086s]
+2018-06-06 07:58:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.089s]
+2018-06-06 07:58:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.063s]
+2018-06-06 07:58:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.110s]
+2018-06-06 07:58:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.168s]
+2018-06-06 07:58:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.092s]
+2018-06-06 07:58:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.121s]
+2018-06-06 07:58:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.066s]
+2018-06-06 07:58:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.060s]
+2018-06-06 07:58:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.055s]
+2018-06-06 07:58:16 [elasticsearch] WARNING: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:400 request:0.002s]
+2018-06-06 07:58:16 [scrapy.core.scraper] ERROR: Error processing {'address': '0x43ee79e379e7b78d871100ed696e803e7893b644',
+ 'name': 'etherdelta_2',
+ 'quantity': 6.2238247965057e+58,
+ 'symbol': 'UGT',
+ 'timestamp': datetime.datetime(2018, 6, 6, 7, 58, 16, 836961)}
+Traceback (most recent call last):
+  File "/opt/Envs/py3/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/opt/Envs/py3/py3_project/TokenTransfers/pipelines.py", line 89, in process_item
+    token_transfer.save()
+  File "/opt/Envs/py3/lib/python3.5/site-packages/elasticsearch_dsl/document.py", line 419, in save
+    **doc_meta
+  File "/opt/Envs/py3/lib/python3.5/site-packages/elasticsearch/client/utils.py", line 76, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/opt/Envs/py3/lib/python3.5/site-packages/elasticsearch/client/__init__.py", line 319, in index
+    _make_path(index, doc_type, id), params=params, body=body)
+  File "/opt/Envs/py3/lib/python3.5/site-packages/elasticsearch/transport.py", line 314, in perform_request
+    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
+  File "/opt/Envs/py3/lib/python3.5/site-packages/elasticsearch/connection/http_urllib3.py", line 180, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "/opt/Envs/py3/lib/python3.5/site-packages/elasticsearch/connection/base.py", line 125, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(status_code, error_message, additional_info)
+elasticsearch.exceptions.RequestError: TransportError(400, 'mapper_parsing_exception', 'failed to parse [quantity]')
+2018-06-06 07:58:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.072s]
+2018-06-06 07:58:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.047s]
+2018-06-06 07:58:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.061s]
+2018-06-06 07:58:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.087s]
+2018-06-06 07:58:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.093s]
+2018-06-06 07:58:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.148s]
+2018-06-06 07:58:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.120s]
+2018-06-06 07:58:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.032s]
+2018-06-06 07:58:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.063s]
+2018-06-06 07:58:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.077s]
+2018-06-06 07:58:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.104s]
+2018-06-06 07:58:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.100s]
+2018-06-06 07:58:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.075s]
+2018-06-06 07:58:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.091s]
+2018-06-06 07:58:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.096s]
+2018-06-06 07:58:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.125s]
+2018-06-06 07:58:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.056s]
+2018-06-06 07:58:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.054s]
+2018-06-06 07:58:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.095s]
+2018-06-06 07:58:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.110s]
+2018-06-06 07:58:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.131s]
+2018-06-06 07:58:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.094s]
+2018-06-06 07:58:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.055s]
+2018-06-06 07:58:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.128s]
+2018-06-06 07:58:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.023s]
+2018-06-06 07:58:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.077s]
+2018-06-06 07:58:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.054s]
+2018-06-06 07:58:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.077s]
+2018-06-06 07:58:19 [scrapy.crawler] INFO: Received SIG_SETMASK twice, forcing unclean shutdown
+2018-06-06 07:58:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.055s]
+2018-06-06 07:58:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.103s]
+2018-06-06 07:58:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.097s]
+2018-06-06 07:58:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.070s]
+2018-06-06 07:58:54 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: TokenTransfers)
+2018-06-06 07:58:54 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.5.5 (default, Apr 20 2018, 23:41:22) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-3.10.0-693.21.1.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-06-06 07:58:54 [scrapy.crawler] INFO: Overridden settings: {'SPIDER_MODULES': ['TokenTransfers.spiders'], 'NEWSPIDER_MODULE': 'TokenTransfers.spiders', 'DOWNLOAD_DELAY': '60', 'BOT_NAME': 'TokenTransfers', 'LOG_FILE': 'tokenholder.log', 'COOKIES_ENABLED': False, 'LOG_LEVEL': 'INFO', 'USER_AGENT': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36', 'CONCURRENT_REQUESTS_PER_DOMAIN': 1}
+2018-06-06 07:58:54 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-06-06 07:58:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'TokenTransfers.middlewares.rotate_user_agent.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-06-06 07:58:54 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-06-06 07:58:54 [scrapy.middleware] INFO: Enabled item pipelines:
+['TokenTransfers.pipelines.ElasticsearchPipeline']
+2018-06-06 07:58:54 [scrapy.core.engine] INFO: Spider opened
+2018-06-06 07:58:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-06 07:59:01 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:1.375s]
+2018-06-06 07:59:01 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.068s]
+2018-06-06 07:59:01 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.060s]
+2018-06-06 07:59:01 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.070s]
+2018-06-06 07:59:01 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.066s]
+2018-06-06 07:59:01 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.063s]
+2018-06-06 07:59:01 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.056s]
+2018-06-06 07:59:01 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.066s]
+2018-06-06 07:59:01 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.058s]
+2018-06-06 07:59:01 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.070s]
+2018-06-06 07:59:01 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.067s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.087s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.067s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.056s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.059s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.049s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.058s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.104s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.070s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.079s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.089s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.058s]
+2018-06-06 07:59:02 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.064s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.058s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.053s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.083s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.054s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.066s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.050s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.059s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.058s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.101s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.070s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.051s]
+2018-06-06 07:59:03 [elasticsearch] WARNING: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:400 request:0.002s]
+2018-06-06 07:59:03 [scrapy.core.scraper] ERROR: Error processing {'address': '0x43ee79e379e7b78d871100ed696e803e7893b644',
+ 'name': 'etherdelta_2',
+ 'quantity': 6.2238247965057e+58,
+ 'symbol': 'UGT',
+ 'timestamp': datetime.datetime(2018, 6, 6, 7, 59, 3, 710966)}
+Traceback (most recent call last):
+  File "/opt/Envs/py3/lib/python3.5/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/opt/Envs/py3/py3_project/TokenTransfers/pipelines.py", line 89, in process_item
+    token_transfer.save()
+  File "/opt/Envs/py3/lib/python3.5/site-packages/elasticsearch_dsl/document.py", line 419, in save
+    **doc_meta
+  File "/opt/Envs/py3/lib/python3.5/site-packages/elasticsearch/client/utils.py", line 76, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "/opt/Envs/py3/lib/python3.5/site-packages/elasticsearch/client/__init__.py", line 319, in index
+    _make_path(index, doc_type, id), params=params, body=body)
+  File "/opt/Envs/py3/lib/python3.5/site-packages/elasticsearch/transport.py", line 314, in perform_request
+    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
+  File "/opt/Envs/py3/lib/python3.5/site-packages/elasticsearch/connection/http_urllib3.py", line 180, in perform_request
+    self._raise_error(response.status, raw_data)
+  File "/opt/Envs/py3/lib/python3.5/site-packages/elasticsearch/connection/base.py", line 125, in _raise_error
+    raise HTTP_EXCEPTIONS.get(status_code, TransportError)(status_code, error_message, additional_info)
+elasticsearch.exceptions.RequestError: TransportError(400, 'mapper_parsing_exception', 'failed to parse [quantity]')
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.063s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.056s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.059s]
+2018-06-06 07:59:03 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.056s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.061s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.104s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.051s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.073s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.051s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.051s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.055s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.049s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.054s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.054s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.051s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.055s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.054s]
+2018-06-06 07:59:04 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.070s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.052s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.056s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.061s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.056s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.060s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.055s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.056s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.049s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.049s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.049s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.069s]
+2018-06-06 07:59:05 [scrapy.crawler] INFO: Received SIG_SETMASK, shutting down gracefully. Send again to force 
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:05 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.049s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.090s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.049s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.049s]
+2018-06-06 07:59:05 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.058s]
+2018-06-06 07:59:06 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:06 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.051s]
+2018-06-06 07:59:06 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.089s]
+2018-06-06 07:59:06 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.066s]
+2018-06-06 07:59:06 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.053s]
+2018-06-06 07:59:06 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.056s]
+2018-06-06 07:59:06 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.063s]
+2018-06-06 07:59:06 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.075s]
+2018-06-06 07:59:06 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.107s]
+2018-06-06 07:59:06 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.109s]
+2018-06-06 07:59:06 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.125s]
+2018-06-06 07:59:06 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.106s]
+2018-06-06 07:59:07 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.098s]
+2018-06-06 07:59:07 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.125s]
+2018-06-06 07:59:07 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.110s]
+2018-06-06 07:59:07 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.087s]
+2018-06-06 07:59:07 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.066s]
+2018-06-06 07:59:07 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.105s]
+2018-06-06 07:59:07 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.068s]
+2018-06-06 07:59:07 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.075s]
+2018-06-06 07:59:07 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.078s]
+2018-06-06 07:59:07 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.047s]
+2018-06-06 07:59:07 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.085s]
+2018-06-06 07:59:07 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.066s]
+2018-06-06 07:59:08 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.089s]
+2018-06-06 07:59:08 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.053s]
+2018-06-06 07:59:08 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.088s]
+2018-06-06 07:59:08 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.059s]
+2018-06-06 07:59:08 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.094s]
+2018-06-06 07:59:08 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.098s]
+2018-06-06 07:59:08 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.061s]
+2018-06-06 07:59:08 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.096s]
+2018-06-06 07:59:08 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.076s]
+2018-06-06 07:59:08 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.104s]
+2018-06-06 07:59:08 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.075s]
+2018-06-06 07:59:08 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.115s]
+2018-06-06 07:59:09 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.074s]
+2018-06-06 07:59:09 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.072s]
+2018-06-06 07:59:09 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.199s]
+2018-06-06 07:59:09 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.146s]
+2018-06-06 07:59:09 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.084s]
+2018-06-06 07:59:09 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.089s]
+2018-06-06 07:59:09 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.091s]
+2018-06-06 07:59:09 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.129s]
+2018-06-06 07:59:09 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.125s]
+2018-06-06 07:59:10 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.131s]
+2018-06-06 07:59:10 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.076s]
+2018-06-06 07:59:10 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.089s]
+2018-06-06 07:59:10 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:10 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.170s]
+2018-06-06 07:59:10 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.103s]
+2018-06-06 07:59:10 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.109s]
+2018-06-06 07:59:10 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.092s]
+2018-06-06 07:59:10 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.075s]
+2018-06-06 07:59:10 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.084s]
+2018-06-06 07:59:11 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.147s]
+2018-06-06 07:59:11 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.073s]
+2018-06-06 07:59:11 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.133s]
+2018-06-06 07:59:11 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.063s]
+2018-06-06 07:59:11 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.155s]
+2018-06-06 07:59:11 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.100s]
+2018-06-06 07:59:11 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.054s]
+2018-06-06 07:59:11 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.084s]
+2018-06-06 07:59:11 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.067s]
+2018-06-06 07:59:11 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.107s]
+2018-06-06 07:59:12 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.107s]
+2018-06-06 07:59:12 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.055s]
+2018-06-06 07:59:12 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.168s]
+2018-06-06 07:59:12 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.113s]
+2018-06-06 07:59:12 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.076s]
+2018-06-06 07:59:12 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.092s]
+2018-06-06 07:59:12 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.059s]
+2018-06-06 07:59:12 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.085s]
+2018-06-06 07:59:12 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.073s]
+2018-06-06 07:59:12 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.091s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.107s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.105s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.047s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.086s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.082s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.103s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.067s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.075s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.099s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.047s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.085s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.054s]
+2018-06-06 07:59:13 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.090s]
+2018-06-06 07:59:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.074s]
+2018-06-06 07:59:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.131s]
+2018-06-06 07:59:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.048s]
+2018-06-06 07:59:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.103s]
+2018-06-06 07:59:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.068s]
+2018-06-06 07:59:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.071s]
+2018-06-06 07:59:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.053s]
+2018-06-06 07:59:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.087s]
+2018-06-06 07:59:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.109s]
+2018-06-06 07:59:14 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.063s]
+2018-06-06 07:59:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.095s]
+2018-06-06 07:59:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.071s]
+2018-06-06 07:59:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.048s]
+2018-06-06 07:59:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.095s]
+2018-06-06 07:59:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.063s]
+2018-06-06 07:59:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.059s]
+2018-06-06 07:59:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.061s]
+2018-06-06 07:59:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.077s]
+2018-06-06 07:59:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.146s]
+2018-06-06 07:59:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.126s]
+2018-06-06 07:59:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.086s]
+2018-06-06 07:59:15 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.089s]
+2018-06-06 07:59:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.081s]
+2018-06-06 07:59:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.074s]
+2018-06-06 07:59:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.090s]
+2018-06-06 07:59:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.089s]
+2018-06-06 07:59:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.090s]
+2018-06-06 07:59:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.116s]
+2018-06-06 07:59:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.137s]
+2018-06-06 07:59:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.098s]
+2018-06-06 07:59:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.085s]
+2018-06-06 07:59:16 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.086s]
+2018-06-06 07:59:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.099s]
+2018-06-06 07:59:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.089s]
+2018-06-06 07:59:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.084s]
+2018-06-06 07:59:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.085s]
+2018-06-06 07:59:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.080s]
+2018-06-06 07:59:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.086s]
+2018-06-06 07:59:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.100s]
+2018-06-06 07:59:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.127s]
+2018-06-06 07:59:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.089s]
+2018-06-06 07:59:17 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.091s]
+2018-06-06 07:59:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.122s]
+2018-06-06 07:59:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.142s]
+2018-06-06 07:59:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.130s]
+2018-06-06 07:59:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.081s]
+2018-06-06 07:59:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.074s]
+2018-06-06 07:59:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.115s]
+2018-06-06 07:59:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.084s]
+2018-06-06 07:59:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.070s]
+2018-06-06 07:59:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.123s]
+2018-06-06 07:59:18 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.076s]
+2018-06-06 07:59:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.086s]
+2018-06-06 07:59:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.080s]
+2018-06-06 07:59:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.117s]
+2018-06-06 07:59:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.073s]
+2018-06-06 07:59:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.121s]
+2018-06-06 07:59:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.089s]
+2018-06-06 07:59:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.090s]
+2018-06-06 07:59:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.146s]
+2018-06-06 07:59:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.073s]
+2018-06-06 07:59:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.081s]
+2018-06-06 07:59:19 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.086s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.087s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.057s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.048s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.053s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.058s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.059s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.048s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.085s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.075s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.059s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.071s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.066s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.099s]
+2018-06-06 07:59:20 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.055s]
+2018-06-06 07:59:21 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.124s]
+2018-06-06 07:59:21 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.090s]
+2018-06-06 07:59:21 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.075s]
+2018-06-06 07:59:21 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.073s]
+2018-06-06 07:59:21 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.098s]
+2018-06-06 07:59:21 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.085s]
+2018-06-06 07:59:21 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.114s]
+2018-06-06 07:59:21 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.065s]
+2018-06-06 07:59:21 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.081s]
+2018-06-06 07:59:21 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.066s]
+2018-06-06 07:59:21 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.091s]
+2018-06-06 07:59:22 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.063s]
+2018-06-06 07:59:22 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.081s]
+2018-06-06 07:59:22 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.063s]
+2018-06-06 07:59:22 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.079s]
+2018-06-06 07:59:22 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.070s]
+2018-06-06 07:59:22 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.110s]
+2018-06-06 07:59:22 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.060s]
+2018-06-06 07:59:22 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.175s]
+2018-06-06 07:59:23 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.674s]
+2018-06-06 07:59:23 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.127s]
+2018-06-06 07:59:23 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.212s]
+2018-06-06 07:59:24 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.342s]
+2018-06-06 07:59:24 [scrapy.crawler] INFO: Received SIG_SETMASK twice, forcing unclean shutdown
+2018-06-06 07:59:24 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.231s]
+2018-06-06 07:59:24 [elasticsearch] INFO: POST http://192.168.1.8:9200/ethsys_whale_history/data [status:201 request:0.213s]
